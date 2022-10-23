@@ -1,4 +1,4 @@
-# CHE2410 - Analysis of Ground-Level 8-hr Ozone Concentrations Versus COVID-19 Death Rate by County in Indiana, Supplemented by Analysis of Presence of a Steel Mill Effects
+# CHE2410 - Analysis of Ground-Level 8-hr Ozone Concentrations Versus COVID-19 Death Rate by County in Indiana, Supplemented by Analysis of Steel Mill Presence
 
 Repository for all files and items in Project 1 of CHE 2410
 
