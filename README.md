@@ -21,6 +21,10 @@ Counties that either had no ozone pollution data or no CVOID data available were
 
 I first decided to plot the death rate versus ozone levels for each county to get a feel for the data and to observe if there was an immediately recognizable correlation. Highlighted in yellow are counties that have a steel mill within them.
 
+<p align="center">
+  <img src="https://github.com/bcerminarache2410/CHE2410-Project-1/blob/main/deathrate%20vs%20ozone%20-%20with%20reg.png" width="350"><br>
+  <img src="https://github.com/bcerminarache2410/CHE2410-Project-1/blob/main/death%20rate%20vs%20ozone%20-%20reg%20nums.png" width="500">
+</p>
 
 After utilizing Python's OLS linear regression model package, I was able to conclude that the P-values of the linearly-fit parameters prevented me from concluding that there was a significant correlation. Therefore, further analyses would need to be concluded.
 
@@ -32,10 +36,20 @@ The next step I took to determine any relationships was grouping the data in the
 
 Running a regression analysis on these grouped values with ozone pollution as the response variable produced the following results:
 
+<p align="center">
+  <img src="https://github.com/bcerminarache2410/CHE2410-Project-1/blob/main/mill%20presence%20vs%20ozone%20-%20with%20reg.png" width="350"><br>
+  <img src="https://github.com/bcerminarache2410/CHE2410-Project-1/blob/main/mill%20presence%20vs%20ozone%20-%20reg%20nums.png" width="500">
+</p>
+
 The P-values of the parameters are less than 0.05, which allow me to assume that there is a significant linear relationship present for these variables. this result was not entirely surprising since steel mills produce a high amount of ozone and since the CDC has linked ozone to respiratory issues, as mentioned above.
 
 
 I then decided to gauge whether there was a significant linear relationship between steel mill presence and deaths per positive case. Repeating the same process as above, I obtained the following results:
+
+<p align="center">
+  <img src="https://github.com/bcerminarache2410/CHE2410-Project-1/blob/main/mill%20presence%20vs%20death%20rate%20-%20with%20reg.png" width="350"><br>
+  <img src="https://github.com/bcerminarache2410/CHE2410-Project-1/blob/main/mill%20presence%20vs%20death%20rate%20-%20reg%20nums.png" width="500">
+</p>
 
 In this case the P-value of the slope parameter prevents me from rejecting the null hypthosis that is is equal to zero. Therefore, I cannot confidently conclude that there is a significant relationship where steel mill presence increases deaths per positive case.
 
@@ -45,8 +59,11 @@ Finally, I decided to run an interaction analysis between ozone pollution, steel
 I then ran a linear regression analysis for an interactive equation of the following form:
 ### $Death Rate = const + x_1(mill presence) + x_2(ozone level) + x_3(mill presence)(ozone level)$
 
-Upon running the linear regression model for this test, I was unable to confidently say that the three metrics had an interaction that followed a linear fit.
+Upon running the linear regression model for this test and obtaining the following results, I was unable to confidently say that the three metrics had an interaction that followed a linear fit.
 
+<p align="center">
+  <img src="https://github.com/bcerminarache2410/CHE2410-Project-1/blob/main/interaction%20reg%20nums.png" width="500">
+</p>
 
 ## Conclusion
 
